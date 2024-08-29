@@ -1,0 +1,66 @@
+.history {
+    padding: 60px 0;
+}
+
+.history h1 {
+    font-size: 2.5rem;
+    color: #ffdf5a;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.stats-summary {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 40px;
+}
+
+.stat {
+    text-align: center;
+}
+
+.stat h3 {
+    font-size: 2rem;
+    color: #ffdf5a;
+    margin-bottom: 10px;
+}
+
+.history-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.history-item {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.history-item h3 {
+    font-size: 1.3rem;
+    color: #ffdf5a;
+    margin-bottom: 10px;
+}
+
+.history-item p {
+    margin-bottom: 5px;
+}
+
+@media screen and (max-width: 768px) {
+    .stats-summary {
+        flex-wrap: wrap;
+    }
+
+    .stat {
+        width: 50%;
+        margin-bottom: 20px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .stat {
+        width: 100%;
+    }
+}
