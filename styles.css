@@ -345,3 +345,69 @@ footer {
         width: 100%;
     }
 }
+
+#testimonials {
+    background-color: #1a1d23;
+    padding: 60px 0;
+  }
+  
+  #testimonials h2 {
+    color: #ffdf5a;
+    font-size: 2rem;
+    margin-bottom: 40px;
+  }
+  
+  .testimonial-slider {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
+  }
+  
+  .testimonial {
+    flex: 0 0 100%;
+    width: 100%;
+    scroll-snap-align: start;
+    padding: 20px;
+  }
+  
+  .testimonial blockquote {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    padding: 30px;
+    font-style: italic;
+    position: relative;
+    margin-bottom: 20px;
+  }
+  
+  .testimonial blockquote::before {
+    content: '"';
+    font-size: 4em;
+    position: absolute;
+    left: 10px;
+    top: -10px;
+    color: rgba(255, 223, 90, 0.3);
+  }
+  
+  .testimonial cite {
+    color: #ffdf5a;
+    font-style: normal;
+    font-weight: bold;
+    display: block;
+    text-align: right;
+    margin-top: 10px;
+  }
+  
+  @media screen and (min-width: 768px) {
+    .testimonial-slider {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 30px;
+      overflow-x: visible;
+    }
+  
+    .testimonial {
+      width: auto;
+    }
+  }
